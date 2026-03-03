@@ -13,3 +13,4 @@ nano config.py
 APP_NAME = "MyApp"
 DEBUG = False
 MAX_RETRIES = 3
+# Used by: app.py
