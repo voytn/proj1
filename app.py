@@ -6,3 +6,7 @@ def greet(name: str) -> str:
 
 if __name__ == "__main__":
     print(greet("World"))
+
+def farewell(name: str) -> str:
+    """Возвращает прощальное сообщение."""
+    return f"Goodbye, {name}!"
