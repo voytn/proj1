@@ -10,3 +10,7 @@ if __name__ == "__main__":
 def farewell(name: str) -> str:
     """Возвращает прощальное сообщение."""
     return f"Goodbye, {name}!"
+
+def multiply(a: float, b: float) -> float:
+    """Умножает два числа."""
+    return a * b
