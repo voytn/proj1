@@ -1,26 +1,43 @@
-# utils.py   вспомогательные функции
+"""
+Utility functions for the application
+"""
 
-def to_uppercase(text: str) -> str:
-    return text.upper()
+def greet(name):
+    """Return a greeting message"""
+    return f"Hello, {name}!"
 
-def to_lowercase(text: str) -> str:
-    return text.lower()
-Сохраните. Затем:
-nano config.py
-Введите:
-# config.py   настройки приложения
+def calculate(a, b):
+    """Simple calculation function"""
+    return a + b
 
-APP_NAME = "MyApp"
-DEBUG = False
-MAX_RETRIES = 3
-# Used by: app.py
+def multiply(a, b):
+    """Multiply two numbers"""
+    return a * b
 
 def subtract(a, b):
     """Subtract b from a"""
     return a - b
-
-def divide(a, b):
+ef divide(a, b):
     """Divide a by b"""
     if b == 0:
         return None
     return a / b
+
+def greet_formal(name):
+    """Formal greeting"""
+    return f"Good day, {name}."
+
+def greet_informal(name):
+    """Informal greeting"""
+    return f"Hey {name}!"
+
+def greet_time_based(name):
+    """Time-based greeting"""
+    from datetime import datetime
+    hour = datetime.now().hour
+    if hour < 12:
+        return f"Good morning, {name}!"
+    elif hour < 18:
+        return f"Good afternoon, {name}!"
+    else:
+        return f"Good evening, {name}!"
