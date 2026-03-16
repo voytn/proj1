@@ -14,3 +14,13 @@ APP_NAME = "MyApp"
 DEBUG = False
 MAX_RETRIES = 3
 # Used by: app.py
+
+def subtract(a, b):
+    """Subtract b from a"""
+    return a - b
+
+def divide(a, b):
+    """Divide a by b"""
+    if b == 0:
+        return None
+    return a / b
